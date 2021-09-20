@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://findyourfootballwebcrawler.mycompany.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://findyourfootballwebcrawler.mycompany.com/">
+
+<xs:element name="FileNotFoundException" type="tns:FileNotFoundException"/>
+
+<xs:element name="GetAmmenitites" type="tns:GetAmmenitites"/>
+
+<xs:element name="GetAmmenititesResponse" type="tns:GetAmmenititesResponse"/>
+
+<xs:element name="GetBundesligaFixtures" type="tns:GetBundesligaFixtures"/>
+
+<xs:element name="GetBundesligaFixturesResponse" type="tns:GetBundesligaFixturesResponse"/>
+
+<xs:element name="GetChampionsLeagueFixtures" type="tns:GetChampionsLeagueFixtures"/>
+
+<xs:element name="GetChampionsLeagueFixturesResponse" type="tns:GetChampionsLeagueFixturesResponse"/>
+
+<xs:element name="GetChampionshipFixtures" type="tns:GetChampionshipFixtures"/>
+
+<xs:element name="GetChampionshipFixturesResponse" type="tns:GetChampionshipFixturesResponse"/>
+
+<xs:element name="GetFACupFixtures" type="tns:GetFACupFixtures"/>
+
+<xs:element name="GetFACupFixturesResponse" type="tns:GetFACupFixturesResponse"/>
+
+<xs:element name="GetFrenchLigueOneFixtures" type="tns:GetFrenchLigueOneFixtures"/>
+
+<xs:element name="GetFrenchLigueOneFixturesResponse" type="tns:GetFrenchLigueOneFixturesResponse"/>
+
+<xs:element name="GetLaLigaFixtures" type="tns:GetLaLigaFixtures"/>
+
+<xs:element name="GetLaLigaFixturesResponse" type="tns:GetLaLigaFixturesResponse"/>
+
+<xs:element name="GetPremierFixtures" type="tns:GetPremierFixtures"/>
+
+<xs:element name="GetPremierFixturesResponse" type="tns:GetPremierFixturesResponse"/>
+
+<xs:element name="GetVenueFixtures" type="tns:GetVenueFixtures"/>
+
+<xs:element name="GetVenueFixturesResponse" type="tns:GetVenueFixturesResponse"/>
+
+<xs:element name="IOException" type="tns:IOException"/>
+
+<xs:complexType name="GetPremierFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetPremierFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="FileNotFoundException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IOException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetFrenchLigueOneFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetFrenchLigueOneFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetBundesligaFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetBundesligaFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetFACupFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetFACupFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetChampionshipFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetChampionshipFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetAmmenitites">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetAmmenititesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetLaLigaFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetLaLigaFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetChampionsLeagueFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetChampionsLeagueFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GetVenueFixtures">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="GetVenueFixturesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
