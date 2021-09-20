@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/userID"
+        android:layout_width="263dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/reviewText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reviewText"
+        android:layout_width="279dp"
+        android:layout_height="98dp"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_marginStart="52dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/userID"
+        app:layout_constraintTop_toBottomOf="@+id/reviewRatingIndicator" />
+
+    <RatingBar
+        android:id="@+id/reviewRatingIndicator"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/distance"
+        android:layout_marginEnd="328dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/golden"
+        android:indeterminate="false"
+        android:max="5"
+        android:numStars="5"
+        android:progressTint="@color/golden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/userID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentDateTextView"
+        android:layout_width="137dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reviewRatingIndicator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

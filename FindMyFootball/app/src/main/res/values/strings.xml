@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Find Your Football</string>
+    <string name="viewOnMapString">View On Map</string>
+    <string name="filterString">Filter</string>
+    <string name="search_hint">Search</string>
+
+    // ARRAY FOR FIXTURE FILTERS
+    <string-array name="fixtureArray">
+        <item>All</item>
+        <item>Two weeks</item>
+        <item>Today</item>
+    </string-array>
+    // ARRAY FOR VENUE FILTERS
+    <string-array name="venueArray">
+        <item>Popular</item>
+        <item>Closest</item>
+        <item>A-Z</item>
+    </string-array>
+
+    <string name="welcomeText">Hello and welcome to Find Your Football. The app that finds your favourite football games at local venues. Please select one of the options to begin. </string>
+</resources>

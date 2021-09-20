@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.jackg.findyourfootball.MenuController">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/venueName"
+            android:layout_width="271dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="200dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/favouritesIcon"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/venueImage" />
+
+        <ImageView
+            android:id="@+id/venueImage"
+            android:layout_width="0dp"
+            android:layout_height="265dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="13dp"
+            android:background="#c0c0c0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/favouritesIcon" />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="303dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/phoneNumberTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/phoneNumberTextView"
+            android:layout_width="315dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addressTextView"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/urlTextView"
+            android:layout_width="481dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ammenititesTextView" />
+
+        <TextView
+            android:id="@+id/ammenititesTextView"
+            android:layout_width="295dp"
+            android:layout_height="273dp"
+            android:gravity="top|center"
+            android:text="TextView"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toEndOf="@+id/openingClosingTextView"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberTextView" />
+
+        <TextView
+            android:id="@+id/openingClosingTextView"
+            android:layout_width="254dp"
+            android:layout_height="252dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/ammenititesTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="Upcoming Matches"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <Button
+            android:id="@+id/viewMapbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="153dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:text="View on Map"
+            app:layout_constraintEnd_toStartOf="@+id/getDirectionsBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <Button
+            android:id="@+id/getDirectionsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="93dp"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:text="Get Directions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/viewMapbtn"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="#FF0000"
+            android:elevation="4dp"
+            android:theme="@style/AppTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="#ffffff" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="9dp"
+            android:background="#c0c0c0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/urlTextView" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:background="#c0c0c0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewMapbtn" />
+
+
+        <TextView
+            android:id="@+id/reviewTitle"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Reviews"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="446dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.628"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reviewTitle">
+
+
+            <EditText
+                android:id="@+id/writeReviewTextfield"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@+id/submitReviewBtn"
+                android:layout_alignLeft="@+id/writeReviewTitle"
+                android:layout_alignStart="@+id/writeReviewTitle"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="82dp"
+                android:layout_marginStart="82dp"
+                android:background="@drawable/commentbackground"
+                android:gravity="top"
+                android:hint="Write review here"
+                android:singleLine="false" />
+
+            <RatingBar
+                android:id="@+id/reviewRating"
+                style="@android:style/Widget.DeviceDefault.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/writeReviewTextfield"
+                android:layout_marginLeft="34dp"
+                android:layout_marginStart="34dp"
+                android:layout_toEndOf="@+id/writeReviewTextfield"
+                android:layout_toRightOf="@+id/writeReviewTextfield"
+                android:clickable="true"
+                android:numStars="5"
+                android:progressTint="@color/golden" />
+
+            <TextView
+                android:id="@+id/writeReviewTitle"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/writeReviewTextfield"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="43dp"
+                android:layout_marginStart="43dp"
+                android:text="Write your review!"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/submitReviewBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="67dp"
+                android:layout_marginRight="67dp"
+                android:background="@android:color/holo_green_light"
+                android:text="Submit Review"
+                tools:layout_editor_absoluteX="451dp"
+                tools:layout_editor_absoluteY="862dp" />
+
+            <ListView
+                android:id="@+id/reviewsListview"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:listSelector="#00ffffff" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/writeReviewTitle"
+                android:background="#c0c0c0" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/venueFixtureListVIew"
+            android:layout_width="0dp"
+            android:layout_height="235dp"
+            android:layout_marginTop="36dp"
+            android:clickable="false"
+            android:listSelector="#00ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/favouritesIcon"
+            android:layout_width="95dp"
+            android:layout_height="76dp"
+            android:layout_marginEnd="30dp"
+            android:clickable="true"
+            android:tag="notFavourite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/venueName"
+            app:layout_constraintTop_toBottomOf="@+id/venueImage"
+            app:srcCompat="@drawable/favourites_icon" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="12dp"
+            android:background="#c0c0c0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/venueFixtureListVIew" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

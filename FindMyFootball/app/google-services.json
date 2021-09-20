@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "281725907055",
+    "firebase_url": "https://find-your-football.firebaseio.com",
+    "project_id": "find-your-football",
+    "storage_bucket": "find-your-football.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281725907055:android:11b5da14b0b77aef",
+        "android_client_info": {
+          "package_name": "com.example.jackg.findyourfootball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281725907055-jvv37m9or2ce2f1uhdjk63vql9e9fi9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jackg.findyourfootball",
+            "certificate_hash": "45b8c0dae86f92d6891b60011db46b35ed6607cd"
+          }
+        },
+        {
+          "client_id": "281725907055-o4akuib4nph9gommsn3iiqe8lhoepsni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu_DmzrJDX53_U5QnPsVzmjSpGuveouZo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281725907055-o4akuib4nph9gommsn3iiqe8lhoepsni.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

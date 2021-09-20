@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    // MENU ICONS FOR NAVIGATION BAR
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/heart"
+        app:showAsAction="always"
+        android:title="Favourites" />
+
+    <item android:id="@+id/search"
+        android:title="@string/search_hint"
+        android:icon="@drawable/white_search_glass"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+         />
+
+
+
+</menu>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/venueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/venueThumbnail"
+        android:layout_width="318dp"
+        android:layout_height="265dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/venueTitle"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal_background" />
+
+        <TextView
+            android:id="@+id/venueKey"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:text="TextView"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="241dp"
+            tools:layout_editor_absoluteY="129dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="172dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/distance"
+        android:layout_marginEnd="45dp"
+        android:layout_marginTop="152dp"
+        android:backgroundTint="@color/golden"
+        android:indeterminate="false"
+        android:max="5"
+        android:numStars="5"
+        android:progressTint="@color/golden"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:layout_alignEnd="@+id/ratingBar"
+        android:layout_alignRight="@+id/ratingBar"
+        android:layout_below="@+id/venueTitle"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="108dp"
+        android:text="TextView"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

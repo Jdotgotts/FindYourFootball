@@ -1,0 +1,14 @@
+[
+
+  {
+    // USED TO REMOVE ALL ICONS FROM GOOGLE MAPS
+    "featureType": "all",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  }
+
+]

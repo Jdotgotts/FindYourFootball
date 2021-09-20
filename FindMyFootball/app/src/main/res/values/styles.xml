@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+
+        <item name="android:titleTextColor" tools:targetApi="m">#ffffff</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="autoCompleteTextViewStyle">@style/SearchAutoCompleteTextView</item>
+        <item name="actionBarStyle">@style/MyApp.ActionBarTheme</item>
+        <item name="colorControlNormal">@color/white</item>
+
+    </style>
+
+    <style name="testing" parent="ThemeOverlay.AppCompat.Light">
+        /
+        <item name="android:titleTextColor" tools:targetApi="m">#ffffff</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
+    // THEME FOR SEARCH BAR TO APPEAR WHITE
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#ffffff</item>
+
+    </style>
+
+    <style name="MyApp.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        // THEME FOR SEARCH BAR TO APPEAR WHITE
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+
+
+
+</resources>
