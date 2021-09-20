@@ -16,7 +16,7 @@
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBOvMBICx_pFX2Zkmkda-DZdaHZq8sEvDk" />
+            android:value="" />
 
 
         <activity
